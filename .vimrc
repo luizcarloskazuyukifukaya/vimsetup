@@ -17,7 +17,7 @@ set nocompatible
 " DONE: Pathogen installed
 " https://riptutorial.com/vim/example/13780/pathogen
 " enable vim-pathogen
- runtime bundle/vim-pathogen/autoload/pathogen.vim
+" runtime bundle/vim-pathogen/autoload/pathogen.vim
 " Landscape colorscheme
 " https://vimawesome.com/plugin/landscape-vim
 
@@ -37,7 +37,7 @@ syntax on
 " For plugins to load correctly
 filetype plugin indent on
 
-execute pathogen#infect()
+"execute pathogen#infect()
 
 " TODO: Pick a leader key
 " let mapleader = ","
@@ -121,18 +121,20 @@ map <leader>l :set list!<CR> " Toggle tabs and EOL
 
 " ================ Color Scheme ========================
 " Color scheme (terminal)
-set t_Co=256
+"set t_Co=256
 set background=dark
+"set background=light
 
 "let g:solarized_termcolors=256
 "let g:solarized_termtrans=1
+" HOW TO INSTALL THE COLORSCHEME
 " put https://raw.github.com/altercation/vim-colors-solarized/master/colors/solarized.vim
+" git clone https://github.com/altercation/solarized.git
 " in ~/.vim/colors/ and uncomment:
-" colorscheme solarized
+" cp solarized/vim-colors-solarized/colors/solarized.vim ~/.vim/colors
+"colorscheme solarized
 
 
-" https://gist.github.com/Fendo181/1bdac7bb98cb87c1feef700dbdcdd22e
-colorscheme molokai
 
 "-------------------------------------------------------
 "[Best for macbook]
@@ -145,8 +147,10 @@ colorscheme molokai
 "colorscheme koehler "Not good for Windows"
 "-------------------------------------------------------
 "[Best for Windows/Lenovo X13]
-colorscheme blue
+"colorscheme blue
 "colorscheme murphy
+" https://gist.github.com/Fendo181/1bdac7bb98cb87c1feef700dbdcdd22e
+colorscheme molokai
 "-------------------------------------------------------
 
 " YAML tab settings
